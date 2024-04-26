@@ -1,9 +1,10 @@
 import './App.css';
-import ContactUs from './pages/Contact/ContactUs';
 
 function App() {
   return (
-    <ContactUs />
+    <div className="App">
+      hello this is for test purpose you will change as app starts to build
+    </div>
   );
 }
 
