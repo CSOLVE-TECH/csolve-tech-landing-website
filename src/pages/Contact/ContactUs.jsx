@@ -26,16 +26,16 @@ const ContactUs = () => {
             <div className="contact_info">
               <div className="contact_item">
                 <FaPhone className="contact_icon" />
-                <p><a href="tel: (650) 278-9253">(650) 278-9253</a></p>
+                <p><a href="tel: (251) 278-9253">(251) 278-9253</a></p>
               </div>
               <div className="contact_item">
                 <FaEnvelope className="contact_icon" />
-                <p><a href="mailto: info@we-bridge.com">info@we-bridge.com</a></p>
+                <p><a href="mailto: info@csolve.com">info@csolve.com</a></p>
               </div>
               <div className="contact_item">
                 <FaMapMarkerAlt className="contact_icon" />
-                <p>2267 Lava Ridge Ct, Roseville, CA 95661 USA</p>
-                <a href="https://www.google.com/maps/place/2267+Lava+Ridge+Ct,+Roseville,+CA+95661,+USA/" target="_blank" rel="noreferrer">Get directions</a>
+                <p>2267 Bole, Addis Ababa, 95661 Ethiopia</p>
+                <a href="#" >Get directions</a>
               </div>
             </div>
             {/* Contact Form Section */}
