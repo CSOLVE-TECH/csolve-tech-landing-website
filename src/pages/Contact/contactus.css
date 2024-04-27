@@ -9,6 +9,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
+  background-image: url("../../../public/bg.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,86 +47,67 @@
   z-index: 0;
 }
 
-.contact_us {
-    display: flex;
-  justify-content: center; /* Align content to the center */
-  align-items: flex-start; /* Align items to the top */
-  padding: 50px 0; /* Adjust top and bottom padding as needed */
-  max-width: 800px;
-  margin: auto;
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
-.contact_contents {
+/* Address Section */
+.contact_info {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-
-
-.contact_body {
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.9); /* Adjust background color and opacity as needed */
+.contact_info .contact_item {
+  flex: 1 1 300px; /* Each address item has a max-width of 300px */
+  margin: 0 15px;
+  background-color: #ffffff; /* Add background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  margin-bottom: 20px;
 }
 
-.office_title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.office_header h2 {
+.contact_info h2 {
   font-size: 24px;
-  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333; /* Adjust color as needed */
+}
+
+.contact_info p {
   margin: 0;
+  font-size: 16px;
+  color: #333; /* Adjust color as needed */
 }
 
-.office_socials {
-  display: flex;
+.contact_info a {
+  color: #007bff; /* Adjust link color as needed */
+  text-decoration: none;
 }
 
-.office_socials a {
-  display: inline-block;
-  margin-left: 10px;
-  font-size: 20px;
-  color: #007bff; /* Adjust color as needed */
+.contact_info a:hover {
+  text-decoration: underline;
 }
 
-.office_socials a:first-child {
-  margin-left: 0;
-}
-
-.contact_info {
-    display: flex;
-    flex-direction: row; /* Arrange items in a row */
-    justify-content: space-between; /* Distribute items evenly */
-    gap: 40px; /* Add space between items */
-    margin-bottom: 20px; /* Add margin at the bottom */
-  }
-
-.contact_col {
-    flex: 1; /* Each column occupies equal width */
-    margin-right: 10px;  /* Adjust width as needed */
-}
-
-.contact_address p,
-.contact_email p {
-  margin: 0;
-}
-
-.contact_address a,
-.contact_email a {
-  color: #007bff; /* Adjust color as needed */
-}
-
+/* Contact Form Section */
 .contact_form {
-  display: flex;
-  flex-direction: column;
+  width: 600px; /* Set width of the contact form */
+  margin: 0 auto; /* Center the form */
+  background-color: #ffffff; /* Add background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  margin-bottom: 20px;
 }
 
 .contact_form h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #333; /* Adjust color as needed */
 }
 
 .form_group {
@@ -134,28 +116,21 @@
 
 .form_group label {
   display: block;
-  font-weight: 700;
+  font-size: 18px;
   margin-bottom: 5px;
+  color: #333; /* Adjust color as needed */
 }
 
 .form_group input,
 .form_group textarea {
-  width: 100%;
-  padding: 10px;
+  width: calc(100% - 24px); /* Set width of input fields */
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  transition: border-color 0.3s ease;
+  font-size: 16px;
 }
 
-.form_group input:focus,
-.form_group textarea:focus {
-  outline: none;
-  border-color: #007bff; /* Adjust focus color as needed */
-}
-
-
-
-textarea {
+.form_group textarea {
   resize: vertical;
 }
 
@@ -163,31 +138,69 @@ button[type="submit"] {
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3; /* Adjust hover color as needed */
+  background-color: #0056b3;
 }
-.faq_contents {
-    max-width: 1200px; /* Adjust the max-width as needed */
-    margin: 0 auto; /* Center the FAQ section */
-    padding: 0 20px; /* Add padding as needed */
+
+
+
+@media (max-width: 768px) {
+  .contact_info,
+  .contact_form {
+    flex: 100%; /* Set to full width on smaller screens */
   }
-  
+}
+
+/* FAQ Section */
+.faq_section {
+  margin-top: 50px; /* Add some space between sections */
+}
+
 .faq_columns {
-    display: flex;
-    justify-content: space-between;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq_column {
+  width: 48%; /* Adjust width as needed */
+}
+
+.faq_item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff; /* Add background color */
+  border-radius: 5px; /* Add border radius for card effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  transform: perspective(1000px) rotateY(5deg); /* Add 3D rotation */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.faq_item:hover {
+  transform: perspective(1000px) rotateY(0); /* Rotate back to original position on hover */
+}
+
+.faq_item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000000; /* Adjust color as needed */
+  font-family: 'Poppins', sans-serif; /* Change font family */
+}
+
+.faq_item p {
+  color: #000000; /* Adjust color as needed */
+  font-family: 'Poppins', sans-serif; /* Change font family */
+}
+
+@media (max-width: 768px) {
   .faq_column {
-    flex: 0 0 48%;
+    width: 100%; /* Set to full width on smaller screens */
+    margin-bottom: 20px; /* Add some spacing between FAQ items */
   }
-  
-  .faq_item {
-    margin-bottom: 30px;
-  }
-  
+}
