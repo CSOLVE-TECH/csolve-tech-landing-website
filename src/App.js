@@ -13,6 +13,7 @@ function App() {
         <About />
       </main>
       <Footer />
+      hello this is for test purpose you will change as app starts to build
     </div>
   );
 }
