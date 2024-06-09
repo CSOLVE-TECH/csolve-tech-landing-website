@@ -5,13 +5,15 @@ import About from './about/about';
 
 function App() {
   return (
-<<<<<<<<< Temporary merge branch 1
-    <ContactUs />
-=========
     <div className="App">
-      hello this is for test purpose you will change as app starts to build
+      <header>
+        <h1>Header</h1>
+      </header>
+      <main>
+        <About />
+      </main>
+      <Footer />
     </div>
->>>>>>>>> Temporary merge branch 2
   );
 }
 
