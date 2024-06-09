@@ -4,6 +4,7 @@
     padding: 20px 40px; /* Adjust padding as needed */
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
   }
   
   .footer-title {
@@ -27,6 +28,8 @@
     margin: 0;
     font-size: 2em; /* Adjust font-size as needed */
     flex: 1; /* Allows h2 to grow and fill available space */
+    font-size: 40px;
+    font-weight: 650;
   }
   
   .connect-button {
@@ -118,7 +121,7 @@
   .footer-column a li:hover{
     color: #E63946;
   }
-  .footer-column h3 {
+  .footer-column h4 {
     margin-bottom: 10px;
     color: #ffffff;
   }
@@ -143,7 +146,7 @@
     
   }
   
-  .footer-support h3 {
+  .footer-support h4 {
     margin-bottom: 10px;
     color: white;
   }

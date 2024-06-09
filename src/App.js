@@ -6,8 +6,13 @@ import About from './about/about';
 function App() {
   return (
     <div className="App">
-      <About />
-      {/* <Footer /> */}
+      <header>
+        <h1>Header</h1>
+      </header>
+      <main>
+        <About />
+      </main>
+      <Footer />
     </div>
   );
 }

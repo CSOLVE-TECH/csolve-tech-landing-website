@@ -19,12 +19,12 @@ const Footer = () => {
                     <p>2267 Lava Ridge Ct,<br/>Roseville, CA 95661</p>
                 </div>
                 <div className="footer-support">
-                    <h3>Need support?</h3>
+                    <h4>Need support?</h4>
                     <a href="">info@csolvetech.com</a>
                 </div>
                 <div className="footer-columns">
                     <div className="footer-column">
-                        <h3>Sitemap</h3>
+                        <h4>Sitemap</h4>
                         <div class="line"></div>
                         <ul>
                             <a href=""><li>Home</li></a>
@@ -34,14 +34,14 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="footer-column">
-                        <h3>Resources</h3>
+                        <h4>Resources</h4>
                         <div class="line"></div>
                         <ul>
                             <a href=""><li>Blog</li></a>
                         </ul>
                     </div>
                     <div className="footer-column">
-                        <h3>Links</h3>
+                        <h4>Links</h4>
                         <div class="line"></div>
                         <ul>
                             <a href=""><li>Privacy Policy</li></a>
