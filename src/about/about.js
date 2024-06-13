@@ -139,7 +139,7 @@ const About = () =>{
                 </div>
 
                 <div className="image-card">
-                <div className="container">
+                <div className="about-container">
                         <Card.Img variant="top" src="images/ararso.jpg" className="image" />
                         <div className="overlay">
                             <div className="text">
@@ -179,7 +179,7 @@ const About = () =>{
                                 </Modal.Body>
                         </Modal>
                     </div> 
-                    <div class="container">
+                    <div class="about-container">
                         <Card.Img variant="top" src="images/sola.jpg" className="image" />
                         
                         <div class="overlay">
@@ -195,7 +195,7 @@ const About = () =>{
                         </Card.Text>
 
                     </div>   
-                    <div class="container">
+                    <div class="about-container">
                         <Card.Img variant="top" src="logo192.png" className="image" />
                         
                         <div class="overlay">
@@ -210,7 +210,7 @@ const About = () =>{
                         Co-founder and CEO 
                         </Card.Text>
                     </div>  
-                    <div class="container">
+                    <div class="about-container">
                         <Card.Img variant="top" src="logo192.png" className="image" />
                         
                         <div class="overlay">
