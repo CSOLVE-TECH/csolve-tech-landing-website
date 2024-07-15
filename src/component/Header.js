@@ -1,14 +1,14 @@
 import Container from 'react-bootstrap/Container';
-import './Header.css'
+import '../styles/header.css'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Facebook from '../../social-medias/Facebook';
-import Instagram from '../../social-medias/Instagram';
-import LinkedIn from '../../social-medias/LinkedIn'
-import Telegram from '../../social-medias/Telegram';
-import Twitter from '../../social-medias/Twitter'
-import Youtube from '../../social-medias/Youtube';
+import Facebook from './social-medias/Facebook';
+import Instagram from './social-medias/Instagram';
+import LinkedIn from './social-medias/LinkedIn'
+import Telegram from './social-medias/Telegram';
+import Twitter from './social-medias/Twitter'
+import Youtube from './social-medias/Youtube';
 function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
