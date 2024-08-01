@@ -1,5 +1,5 @@
 import Container from 'react-bootstrap/Container';
-import '../styles/header.css'
+import './header.css'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -53,7 +53,7 @@ function BasicExample() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link" className='Nav-itemes'>Contact Us</Nav.Link>
+            <Nav.Link href="/contact" className='Nav-itemes'>Contact Us</Nav.Link>
 
             <Nav.Link href="#home" className="separate-socials-from-tabs"><Facebook /></Nav.Link>
             <Nav.Link href="#home"><Instagram /></Nav.Link>

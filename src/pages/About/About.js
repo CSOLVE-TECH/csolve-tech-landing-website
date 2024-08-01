@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "../styles/about.css";
+import "./about.css";
 import { Card, CardGroup, Button, Modal } from "react-bootstrap";
-import bgImage from "../images/oipdc.jpeg"
 const About = () => {
   const [showCard, setShowCard] = useState(false);
 
@@ -13,7 +12,7 @@ const About = () => {
     <div>
       <div
         style={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/oipdc.jpeg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "400px",
@@ -65,7 +64,7 @@ const About = () => {
 
           <CardGroup className="about-card">
             <Card>
-              <Card.Img variant="top" src={require("../images/software.jpg")} />
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/software.jpg`} />
               <Card.Body>
                 <Card.Title>Software Only</Card.Title>
                 <Card.Text>
@@ -75,7 +74,7 @@ const About = () => {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Img variant="top" src={require("../images/secure.jpg")} />
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/secure.jpg`} />
               <Card.Body>
                 <Card.Title>Extremely Secure</Card.Title>
                 <Card.Text>
@@ -88,7 +87,7 @@ const About = () => {
 
           <CardGroup className="about-card">
             <Card>
-              <Card.Img variant="top" src={require("../images/afford.jpeg")} />
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/afford.jpeg`} />
               <Card.Body>
                 <Card.Title>Affordable</Card.Title>
                 <Card.Text>
@@ -98,7 +97,7 @@ const About = () => {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Img variant="top" src={require("../images/reliable.jpeg")} />
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/reliable.jpeg`} />
               <Card.Body>
                 <Card.Title>Reliable</Card.Title>
                 <Card.Text>
@@ -157,7 +156,7 @@ const About = () => {
           <div className="about-container">
             <Card.Img
               variant="top"
-              src={require("../images/team-members/ararso.jpg")}
+              src={`${process.env.PUBLIC_URL}/assets/images/team-members/ararso.jpg`}
               className="image"
             />{" "}
             <div className="overlay">
@@ -184,7 +183,7 @@ const About = () => {
                   className="model-p"
                 >
                   <img
-                    src="../images/team-members/ararso.jpg"
+                    src={`${process.env.PUBLIC_URL}/assets/images/team-members/ararso.jpg`}
                     alt="Ararso Alisho"
                     style={{
                       width: "250px",
@@ -221,7 +220,7 @@ const About = () => {
           <div class="about-container">
             <Card.Img
               variant="top"
-              src={require("../images/team-members/sola.jpg")}
+              src={`${process.env.PUBLIC_URL}/assets/images/team-members/sola.jpg`}
               className="image"
             />
 
@@ -242,7 +241,7 @@ const About = () => {
           <div class="about-container">
             <Card.Img
               variant="top"
-              src={require("../images/team-members/birhanu.jpg")}
+              src={`${process.env.PUBLIC_URL}/assets/images/team-members/birhanu.jpg`}
               className="image"
             />
 
@@ -263,7 +262,7 @@ const About = () => {
           <div class="about-container">
             <Card.Img
               variant="top"
-              src={require("../images/logo192.png")}
+              src={`${process.env.PUBLIC_URL}/assets/images/logo192.png`}
               className="image"
             />
 
