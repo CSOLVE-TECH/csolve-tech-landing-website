@@ -18,40 +18,28 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home" className='Nav-itemes'>Home</Nav.Link>
-            <Nav.Link href="#link" className='Nav-itemes'>Link</Nav.Link>
             
-            <NavDropdown title="About Us" id="basic-nav-dropdown" className='Nav-itemes'>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#" className='Nav-itemes'>About Us</Nav.Link>
+
             <NavDropdown title="Services" id="basic-nav-dropdown" className='Nav-itemes'>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Software Development</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+              Software Training Center
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.3">Technology Material Import</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+              Developer-Company Central HUB
               </NavDropdown.Item>
+             {/* <NavDropdown.Item href="#action/3.4">
+  Network and CCTV(Closed-Circuit Television) installation 
+</NavDropdown.Item> */}
             </NavDropdown>
             <NavDropdown title="Resource" id="basic-nav-dropdown" className='Nav-itemes'>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Bloges</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                Guides
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              
             </NavDropdown>
             <Nav.Link href="/contact" className='Nav-itemes'>Contact Us</Nav.Link>
 
