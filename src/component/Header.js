@@ -19,7 +19,7 @@ function BasicExample() {
           <Nav className="me-auto">
             <Nav.Link href="#home" className='Nav-itemes'>Home</Nav.Link>
             
-            <Nav.Link href="#" className='Nav-itemes'>About Us</Nav.Link>
+            <Nav.Link href="/about" className='Nav-itemes'>About Us</Nav.Link>
 
             <NavDropdown title="Services" id="basic-nav-dropdown" className='Nav-itemes'>
               <NavDropdown.Item href="#action/3.1">Software Development</NavDropdown.Item>
