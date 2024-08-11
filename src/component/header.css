@@ -1,15 +1,22 @@
-.separate-socials-from-tabs {
-    margin-left: 50px !important; 
-  }
-  .Nav-itemes, .csolve{
-    font-weight: bold !important;
-  }
 
-  
-  .Nav-itemes:hover,
+.separate-socials-from-tabs {
+  margin-left: 50px !important; 
+}
+
+.Nav-itemes, .csolve {
+  font-weight: bold !important;
+}
+
+.Nav-itemes:hover,
 .Nav-itemes:focus,
 .Nav-itemes:active {
   color: blue !important;
   border-bottom: 4px solid blue !important; 
-  
+}
+
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020; 
+  background-color: white; 
 }

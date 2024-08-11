@@ -1,18 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import "./about.css";
 import { Card, CardGroup, Button, Modal } from "react-bootstrap";
 const About = () => {
   const [showCard, setShowCard] = useState(false);
-
+  const navigate = useNavigate();
   const handleClick = () => {
     setShowCard(!showCard);
   };
+  const navigateToContactPage =()=>{
+     navigate('/contact');
+    
+  }
 
   return (
     <div>
       <div
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/oipdc.jpeg)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/about-us-bg.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "400px",
@@ -30,14 +35,15 @@ const About = () => {
             textShadow: "2px 2px 4px rgba(0,0,0,0.6)", // Optional: adds a shadow to the text
           }}
         >
-          <h1>Your Text Here</h1>
-          <p>Additional text can go here</p>
-        </div>
+          <h1>Csolve_Tech+</h1>
+          <h1 className="animated-heading">The ultimate complete technology solution</h1>
+                    
+          </div>
       </div>
 
       <div className="platform">
         <h5>WE-BRIDGE PLATFORM</h5>
-        <h1>Complete Technology Solutions</h1>
+        <h1>Complete Technology Solution for your business</h1>
         <div className="techinfo">
           <p>
             Businesses today need to protect their digital assets and
@@ -68,8 +74,7 @@ const About = () => {
               <Card.Body>
                 <Card.Title>Software Only</Card.Title>
                 <Card.Text>
-                  When hardware is involved it makes the solution complicated
-                  and expensive to set up.
+                At present, we offer a comprehensive range of software solutions, catering to various needs and providing versatile options to address a wide array of requirements.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -78,9 +83,7 @@ const About = () => {
               <Card.Body>
                 <Card.Title>Extremely Secure</Card.Title>
                 <Card.Text>
-                  The product must be the most secure offering compared to its
-                  competitors.
-                </Card.Text>
+                The product we provide is designed with the highest level of security in mind, ensuring robust protection and safeguarding of your data and operations."                </Card.Text>
               </Card.Body>
             </Card>
           </CardGroup>
@@ -91,8 +94,7 @@ const About = () => {
               <Card.Body>
                 <Card.Title>Affordable</Card.Title>
                 <Card.Text>
-                  Products we offer must be low-cost compared to other
-                  solutions.
+                Our product is priced competitively, offering significant cost savings compared to other solutions available in the market, making it an economically advantageous choice for our customers.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -101,8 +103,7 @@ const About = () => {
               <Card.Body>
                 <Card.Title>Reliable</Card.Title>
                 <Card.Text>
-                  Both the product and the company must be reliable so our
-                  customers can stick with it long term.
+                Our product and company are both highly dependable, providing a consistent and trustworthy experience that allows our customers to confidently commit to and rely on us for the long term."
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -114,17 +115,17 @@ const About = () => {
         <h1>Interested in Partnering with Csolve Tech+?</h1>
         <div className="techinfo">
           <div class="buttons">
-            <button class="blob-btn">
-              Send Us Message
-              <span class="blob-btn__inner">
-                <span class="blob-btn__blobs">
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                </span>
-              </span>
-            </button>
+          <button className="blob-btn" onClick={navigateToContactPage}>
+      Send Us Message
+      <span className="blob-btn__inner">
+        <span className="blob-btn__blobs">
+          <span className="blob-btn__blob"></span>
+          <span className="blob-btn__blob"></span>
+          <span className="blob-btn__blob"></span>
+          <span className="blob-btn__blob"></span>
+        </span>
+      </span>
+    </button>
             <br />
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -186,7 +187,7 @@ const About = () => {
                     src={`${process.env.PUBLIC_URL}/assets/images/team-members/ararso.jpg`}
                     alt="Ararso Alisho"
                     style={{
-                      width: "250px",
+                      width: "200px",
                       height: "300px",
                       marginRight: "20px",
                       borderRadius: "50%",

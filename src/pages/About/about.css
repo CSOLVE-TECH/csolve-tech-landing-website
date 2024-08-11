@@ -120,8 +120,8 @@
 }
 
 .image-card .image{
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 70%;
   padding: 0px;
 }
 
@@ -311,3 +311,22 @@ body {
   }
 }
 
+@keyframes moveInfinite {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+.animated-heading {
+  display: inline-block; 
+  animation: moveInfinite 4s linear infinite;
+}
