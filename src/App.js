@@ -6,6 +6,7 @@ import Header from "./component/Header";
 import ContactUs from './pages/Contactus/ContactUs';
 import './App.css';
 import Footer from './component/Footer';
+import Home from ''
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <main>
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
