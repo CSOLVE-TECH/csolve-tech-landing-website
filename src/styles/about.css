@@ -1,0 +1,313 @@
+.home-img {
+    background-image: 'url(../images/oipdc.jpeg)';
+    background-size: 'cover';
+    background-position: 'center';
+    height: '400px';
+    position: 'relative';
+}
+
+.home-text {
+    position: 'absolute';
+    top: '50%';
+    left: '40%';
+    transform: 'translate(-50%, -50%)';
+    text-align: 'center';
+    color: 'white';
+    text-shadow: '2px 2px 4px rgba(0,0,0,0.6)';
+   
+}
+
+
+.platform{
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+}
+
+.platform h5{
+  color: rgb(22, 116, 224);
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+
+.platform h1{
+  margin-bottom: 30px;
+  font-size: 45px;
+  font-weight: 650;
+}
+
+.platform p{
+  font-size: 19px;
+  font-family: Roboto;
+}
+
+.main-about{
+  background-color: rgb(237, 237, 249);
+}
+
+.technology{
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 5%;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.our-process{
+   padding-left: 2%;
+
+}
+
+.our-process p{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 19px;
+  font-family: Roboto;
+}
+
+.about-card {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.main-about .card {
+  display: flex;
+  align-items: center;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  max-width: 600px;
+
+}
+
+.platform1{
+  margin-bottom: 80px;
+  margin-top: -100px;
+}
+
+.platform1 h1{
+  margin-bottom: 30px;
+  font-size: 45px;
+  font-weight: 650;
+
+}
+
+  .card-image {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-title {
+    font-size: 21px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+.image-card{
+  display: flex;
+  margin-top: -50px;
+}
+
+.image-card .image{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.about-container {
+  position: relative;
+  width: 50%;
+  padding-left: 10px;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  height: 25rem;
+  
+}
+
+.model-p{
+  font-size: 19px;
+  font-family: Roboto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #c0c1cc;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+  opacity: 0.7; /* Set initial opacity for overlay */
+}
+
+.about-container:hover .overlay {
+  height: 100%;
+  opacity: 0.7;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1; /* Ensure text remains fully opaque */
+}
+
+.about-container .f-name{
+  font-weight: 500;
+  margin-top: 25px;
+}
+.about-container .f-position{
+  font-size: 15px;
+}
+
+/* Variables (converted to actual values) */
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* Button Container */
+.buttons {
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/* Blob Button Styles */
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  padding: 20px 46px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0505A9;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: color 0.5s;
+}
+
+.blob-btn:before, .blob-btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.blob-btn:before {
+  z-index: 1;
+  left: 0;
+  top: 0;
+  border: 2px solid #0505A9;
+}
+
+.blob-btn:after {
+  z-index: -2;
+  left: calc(2px * 1.5);
+  top: calc(2px * 1.5);
+  transition: all 0.3s 0.2s;
+}
+
+.blob-btn:hover {
+  color: #FFFFFF;
+}
+
+.blob-btn:hover:after {
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+}
+
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url('#goo');
+}
+
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: calc(100% / 4);
+  height: 100%;
+  background: #0505A9;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+
+@supports (filter: url('#goo')) {
+  .blob-btn__blob {
+    transform: translate3d(0, 150%, 0) scale(1.4);
+  }
+}
+
+.blob-btn__blob:nth-child(1) {
+  left: calc((1 - 1) * (120% / 4));
+  transition-delay: calc((1 - 1) * 0.08s);
+}
+
+.blob-btn__blob:nth-child(2) {
+  left: calc((2 - 1) * (120% / 4));
+  transition-delay: calc((2 - 1) * 0.08s);
+}
+
+.blob-btn__blob:nth-child(3) {
+  left: calc((3 - 1) * (120% / 4));
+  transition-delay: calc((3 - 1) * 0.08s);
+}
+
+.blob-btn__blob:nth-child(4) {
+  left: calc((4 - 1) * (120% / 4));
+  transition-delay: calc((4 - 1) * 0.08s);
+}
+
+.blob-btn:hover .blob-btn__blob {
+  transform: translateZ(0) scale(1.7);
+}
+
+@supports (filter: url('#goo')) {
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+

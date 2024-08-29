@@ -1,12 +1,8 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import About from './pages/About/About';
-import Header from "./component/Header";
-import ContactUs from './pages/Contactus/ContactUs';
+/* import logo from './logo.svg'; */
 import './App.css';
 import Footer from './component/Footer';
-import Home from ''
+import About from './pages/About';
+import Header from './component/Header'
 
 function App() {
   return (
