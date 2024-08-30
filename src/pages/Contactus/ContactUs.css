@@ -35,16 +35,16 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: #131421;
+    background-color: #e2e2ef;
     min-height: 50rem;
     min-width: 100vw;
 
 }
 .company-details{
-    width: 30vw;
+    width: 32vw;
     height: 80vh;
     border-radius: .5rem;
-    background: #007BFF;
+    background: #4ee177;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@
     height: 80vh;
     padding: 2rem;
     border-radius: .5rem;
-    background: #24252f;
+    background: #ffffff;
     position: relative;
 }
 .form-container{
@@ -125,19 +125,14 @@
     display: flex;
     flex-direction: column;
 }
-.form-group label {
-    margin-bottom: 5px;
-    text-transform: lowercase; /* Match the text style in the design */
-    color: #a7a0a0;
-    text-align: left;
-}
+
 .form-group input,
 .form-group textarea {
     padding: 8px 0;
     border: none;
     border-bottom: 1px solid #ccc; /* Thicker bottom border */
     background-color: transparent; /* Transparent input background */
-    color: #fff; /* White text for input fields */
+    color: #000000; /* White text for input fields */
     font-size: 16px; /* Larger font size for better readability */
 }
 .form-group input:focus,
@@ -147,7 +142,7 @@
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #6b6666; /* Lighter placeholder color */
+    color: #0b0b0b; /* Lighter placeholder color */
 }
 .form-group textarea {
     resize: none;
@@ -158,7 +153,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #007BFF;
+    background-color: #4ee177;
     color: white;
     cursor: pointer;
     font-size: 16px; /* Larger font size for button */
@@ -168,6 +163,10 @@
     background-color: #0056b3;
 }
 .faq{
-    background: #131421;
-    padding: 2rem;
+    background: #e2e2ef;
+    padding: 1rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

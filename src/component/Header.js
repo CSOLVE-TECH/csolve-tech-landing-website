@@ -15,17 +15,16 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary sticky-navbar">
       <Container>
-        <Navbar.Brand href="#home" className="csolve">Csolve_Tech+</Navbar.Brand>
+        <Navbar.Brand href="/" className="csolve">Csolve_Tech+</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="Nav-itemes">Home</Nav.Link>
+            <Nav.Link href="/" className="Nav-itemes">Home</Nav.Link>
             <Nav.Link href="/about" className="Nav-itemes">About Us</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown" className="Nav-itemes">
               <NavDropdown.Item href="#action/3.1">Software Development</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Software Training Center</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Technology Material Import</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Developer-Company Central HUB</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Developer Outsourcing</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Resource" id="basic-nav-dropdown" className="Nav-itemes">
               <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
