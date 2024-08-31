@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import './header.css';
 import Nav from 'react-bootstrap/Nav';
@@ -12,22 +12,44 @@ import Twitter from './social-medias/Twitter';
 import Youtube from './social-medias/Youtube';
 
 function BasicExample() {
+  // State for managing dropdown hover
+  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const [showResourceDropdown, setShowResourceDropdown] = useState(false);
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary sticky-navbar">
       <Container>
-        <Navbar.Brand href="#home" className="csolve">Csolve_Tech+</Navbar.Brand>
+        <Navbar.Brand href="#home" className="csolve">
+          <div className="brand-image-container">
+            <img src="/assets/images/logo.jpg" alt="Brand" className="brand-image" />
+          </div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home" className="Nav-itemes">Home</Nav.Link>
             <Nav.Link href="/about" className="Nav-itemes">About Us</Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown" className="Nav-itemes">
+            <NavDropdown
+              title="Services"
+              id="basic-nav-dropdown"
+              className="Nav-itemes"
+              show={showServicesDropdown}
+              onMouseEnter={() => setShowServicesDropdown(true)}
+              onMouseLeave={() => setShowServicesDropdown(false)}
+            >
               <NavDropdown.Item href="#action/3.1">Software Development</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Software Training Center</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Technology Material Import</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Developer-Company Central HUB</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Resource" id="basic-nav-dropdown" className="Nav-itemes">
+            <NavDropdown
+              title="Resource"
+              id="basic-nav-dropdown"
+              className="Nav-itemes"
+              show={showResourceDropdown}
+              onMouseEnter={() => setShowResourceDropdown(true)}
+              onMouseLeave={() => setShowResourceDropdown(false)}
+            >
               <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Guides</NavDropdown.Item>
             </NavDropdown>
