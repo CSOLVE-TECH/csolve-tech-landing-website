@@ -1,7 +1,16 @@
+.social-icon {
+ opacity: 0.5;
+  margin-right: 10px; 
+}
+
+.social-icon:hover {
+  opacity: 1; 
+  color: blue; 
+}
 .Nav-itemes {
   font-weight: bold !important;
   color: black !important; 
-  margin-right: 20px; /* Increase or decrease this value to adjust spacing */
+  margin-right: 20px; 
 }
 
 .Nav-itemes:hover,
