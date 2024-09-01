@@ -1,10 +1,11 @@
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from './pages/About/About';
+import Header from "./component/Header";
+import ContactUs from './pages/Contactus/ContactUs';
 import './App.css';
 import Footer from './component/Footer';
-import About from './pages/About';
-// import Header from './component/Header';
-import Home from './pages/Home'; // Ensure this is the correct path
-import ContactUs from './pages/ContactUs'; // Ensure this is the correct path
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,7 +14,6 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
