@@ -62,55 +62,50 @@ function ContactUs() {
             <div className="form-container">
               <div class="form-row">
                 <div class="form-group">
-                  <label for="first-name">first name</label>
                   <input
                     type="text"
                     id="first-name"
                     name="first-name"
-                    placeholder="First Name"
+                    placeholder="first name"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label for="last-name">last name</label>
                   <input
                     type="text"
                     id="last-name"
                     name="last-name"
-                    placeholder="Last Name"
+                    placeholder="last name"
                     required
                   />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="email">email</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="email"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label for="phone">phone</label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
-                    placeholder="Phone"
+                    placeholder="phone"
                     required
                   />
                 </div>
               </div>
               <div class="form-row full-width">
                 <div class="form-group">
-                  <label for="message">message</label>
                   <textarea
                     id="message"
                     name="message"
-                    placeholder="Your message"
+                    placeholder="your message"
                     required
                   ></textarea>
                 </div>
