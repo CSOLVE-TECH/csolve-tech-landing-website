@@ -1,15 +1,15 @@
 .contact-us-cover {
-  background-image: url("/public/assets/universe.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background-image: url("/public/assets/universe.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-.contact-us-cover .text-content{
-    margin-top: 5rem;
+
+.contact-us-cover .text-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -17,23 +17,29 @@
     background: #0000009a;
     border-radius: .5rem;
     padding: .5rem 1.3rem;
+    margin-left: 8rem;
+
     /* gap: 2rem; */
 }
-.text-content .title{
+
+.text-content .title {
     color: #0076E3;
     font-size: 1.3rem;
     font-weight: 100;
 }
-.text-content .heading{
+
+.text-content .heading {
     color: #fff;
     font-size: 2.5rem;
 }
-.text-content .description{
+
+.text-content .description {
     color: #0076E3;
     font-size: 1.3rem;
     font-weight: 100;
 }
-.contact-details{
+
+.contact-details {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +49,8 @@
     min-width: 100vw;
 
 }
-.company-details{
+
+.company-details {
     width: 32vw;
     height: 80vh;
     border-radius: .5rem;
@@ -53,33 +60,41 @@
     flex-direction: column;
     padding: 2rem;
 }
-.company-details h1{
+
+.company-details h1 {
     color: #fff;
     font-size: 1.6rem;
 }
-.company-details .section{
+
+.company-details .section {
     text-align: left;
     margin-top: 2rem;
 }
-.company-details .section p, .company-details .section div div{
+
+.company-details .section p,
+.company-details .section div div {
     color: #2c2828;
     font-size: 1.2rem;
 }
-.company-details .icons{
+
+.company-details .icons {
     margin-top: auto;
     color: #fff;
-    
+
 }
-.company-details .social-icons{
-    padding: .1rem;  
-    font-size: x-large;  
+
+.company-details .social-icons {
+    padding: .1rem;
+    font-size: x-large;
 }
-.company-details .icon{
+
+.company-details .icon {
     height: 7%;
     width: 7%;
     margin: .25rem .25rem;
 }
-.big-circle{
+
+.big-circle {
     width: 10rem;
     height: 10rem;
     background: #fff;
@@ -89,7 +104,8 @@
     right: 0;
     bottom: 0;
 }
-.small-circle{
+
+.small-circle {
     width: 8rem;
     height: 8rem;
     background: #010101;
@@ -100,7 +116,7 @@
     bottom: 10%;
 }
 
-.message-form{
+.message-form {
     width: 50vw;
     height: 80vh;
     padding: 2rem;
@@ -108,21 +124,26 @@
     background: #ffffff;
     position: relative;
 }
-.form-container{
+
+.form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2.5rem;
 }
+
 .form-row {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-bottom: 20px; /* Increased spacing for better readability */
+    margin-bottom: 20px;
+    /* Increased spacing for better readability */
 }
+
 .form-row.full-width {
     flex-direction: column;
 }
+
 .form-group {
     flex: 1 1 48%;
     display: flex;
@@ -133,20 +154,30 @@
 .form-group textarea {
     padding: 8px 0;
     border: none;
-    border-bottom: 1px solid #ccc; /* Thicker bottom border */
-    background-color: transparent; /* Transparent input background */
-    color: #000000; /* White text for input fields */
-    font-size: 16px; /* Larger font size for better readability */
+    border-bottom: 1px solid #ccc;
+    /* Thicker bottom border */
+    background-color: transparent;
+    /* Transparent input background */
+    color: #000000;
+    /* White text for input fields */
+    font-size: 16px;
+    /* Larger font size for better readability */
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
-    border-bottom: 2px solid #ccc; /* Keep border color same on focus */
-    outline: none; /* Remove default focus outline */
+    border-bottom: 2px solid #ccc;
+    /* Keep border color same on focus */
+    outline: none;
+    /* Remove default focus outline */
 }
+
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #0b0b0b; /* Lighter placeholder color */
+    color: #0b0b0b;
+    /* Lighter placeholder color */
 }
+
 .form-group textarea {
     resize: none;
     height: 10rem;
@@ -159,13 +190,16 @@
     background-color: #0076E3;
     color: white;
     cursor: pointer;
-    font-size: 16px; /* Larger font size for button */
+    font-size: 16px;
+    /* Larger font size for button */
     align-self: flex-end;
 }
+
 .form-group button:hover {
     background-color: #0056b3;
 }
-.faq{
+
+.faq {
     background: #e2e2ef;
     padding: 1rem;
     padding-bottom: 6rem;
