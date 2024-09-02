@@ -42,17 +42,19 @@ const About = () => {
       </div>
 
       <div className="platform">
-        <h5>WE-BRIDGE PLATFORM</h5>
-        <h1>Complete Technology Solution for your business</h1>
-        <div className="techinfo">
-          <p>
-            Businesses today need to protect their digital assets and
-            information – without complicated and expensive setup. We-Bridge
-            partners with only the best companies to serve you a complete and
-            curated platform of cybersecurity and data management solutions.
-          </p>
-        </div>
-      </div>
+  <h5>CSOLVE-TECH+ PLATFORM</h5>
+  <h1>Complete Technology Solutions for Your Business</h1>
+  <div className="techinfo">
+    <p>
+      Csolve-Tech+ specializes in delivering comprehensive software solutions tailored to 
+      your business needs. We offer a wide range of services including software development, 
+      a software training center to upskill your team, and developer outsourcing to provide you 
+      with the right talent. Our platform ensures that your business is equipped with the necessary 
+      tools and expertise to succeed in today's digital landscape.
+    </p>
+  </div>
+</div>
+
 
       <div className="main-about">
         <div className="technology">
