@@ -14,10 +14,13 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    background: #0000009a;
+    border-radius: .5rem;
+    padding: .5rem 1.3rem;
     /* gap: 2rem; */
 }
 .text-content .title{
-    color: #4ee177;
+    color: #0076E3;
     font-size: 1.3rem;
     font-weight: 100;
 }
@@ -26,7 +29,7 @@
     font-size: 2.5rem;
 }
 .text-content .description{
-    color: #4ee177;
+    color: #0076E3;
     font-size: 1.3rem;
     font-weight: 100;
 }
@@ -44,7 +47,7 @@
     width: 32vw;
     height: 80vh;
     border-radius: .5rem;
-    background: #4ee177;
+    background: #0076E3;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -153,7 +156,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #4ee177;
+    background-color: #0076E3;
     color: white;
     cursor: pointer;
     font-size: 16px; /* Larger font size for button */

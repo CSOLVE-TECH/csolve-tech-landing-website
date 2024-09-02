@@ -22,7 +22,7 @@ function BasicExample() {
             <Nav.Link href="/" className="Nav-itemes">Home</Nav.Link>
             <Nav.Link href="/about" className="Nav-itemes">About Us</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown" className="Nav-itemes">
-              <NavDropdown.Item href="#action/3.1">Software Development</NavDropdown.Item>
+              <NavDropdown.Item href="/service/software-development">Software Development</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Software Training Center</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Developer Outsourcing</NavDropdown.Item>
             </NavDropdown>
