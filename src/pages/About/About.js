@@ -69,45 +69,54 @@ const About = () => {
           </div>
 
           <CardGroup className="about-card">
-            <Card>
-              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/software.jpg`} />
-              <Card.Body>
-                <Card.Title>Software Only</Card.Title>
-                <Card.Text>
+        <Card className="card-item">
+          <div className="card-content">
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/software.jpg`} className="card-image" />
+            <Card.Body className="card-body">
+              <Card.Title>Software Only</Card.Title>
+              <Card.Text>
                 At present, we offer a comprehensive range of software solutions, catering to various needs and providing versatile options to address a wide array of requirements.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/secure.jpg`} />
-              <Card.Body>
-                <Card.Title>Extremely Secure</Card.Title>
-                <Card.Text>
-                The product we provide is designed with the highest level of security in mind, ensuring robust protection and safeguarding of your data and operations."                </Card.Text>
-              </Card.Body>
-            </Card>
-          </CardGroup>
+              </Card.Text>
+            </Card.Body>
+          </div>
+        </Card>
+        <Card className="card-item">
+          <div className="card-content">
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/secure.jpg`} className="card-image" />
+            <Card.Body className="card-body">
+              <Card.Title>Extremely Secure</Card.Title>
+              <Card.Text>
+                The product we provide is designed with the highest level of security in mind, ensuring robust protection and safeguarding of your data and operations.
+              </Card.Text>
+            </Card.Body>
+          </div>
+        </Card>
+      </CardGroup>
 
-          <CardGroup className="about-card">
-            <Card>
-              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/afford.jpeg`} />
-              <Card.Body>
-                <Card.Title>Affordable</Card.Title>
-                <Card.Text>
+      <CardGroup className="about-card">
+        <Card className="card-item">
+          <div className="card-content">
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/afford.jpeg`} className="card-image" />
+            <Card.Body className="card-body">
+              <Card.Title>Affordable</Card.Title>
+              <Card.Text>
                 Our product is priced competitively, offering significant cost savings compared to other solutions available in the market, making it an economically advantageous choice for our customers.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/reliable.jpeg`} />
-              <Card.Body>
-                <Card.Title>Reliable</Card.Title>
-                <Card.Text>
-                Our product and company are both highly dependable, providing a consistent and trustworthy experience that allows our customers to confidently commit to and rely on us for the long term."
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </CardGroup>
+              </Card.Text>
+            </Card.Body>
+          </div>
+        </Card>
+        <Card className="card-item">
+          <div className="card-content">
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/assets/images/reliable.jpeg`} className="card-image" />
+            <Card.Body className="card-body">
+              <Card.Title>Reliable</Card.Title>
+              <Card.Text>
+                Our product and company are both highly dependable, providing a consistent and trustworthy experience that allows our customers to confidently commit to and rely on us for the long term.
+              </Card.Text>
+            </Card.Body>
+          </div>
+        </Card>
+      </CardGroup>
         </div>
       </div>
       <div className="platform">
@@ -149,7 +158,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="platform1">
+        { /*<div className="platform1">
           <h1>Our Founder</h1>
         </div>
 
@@ -173,7 +182,6 @@ const About = () => {
             </div>
             <Card.Title className="f-name">Ararso Alisho</Card.Title>
             <Card.Text className="f-position">Co-founder and CEO</Card.Text>
-            {/* Modal for displaying additional info */}
             <Modal show={showCard} onHide={handleClick} size="lg" centered>
               <Modal.Header closeButton>
                 <Modal.Title>Ararso Alisho</Modal.Title>
@@ -281,7 +289,7 @@ const About = () => {
             <Card.Title className="f-name">Mohamed Nurhuisen</Card.Title>
             <Card.Text className="f-position">Co-founder and CEO</Card.Text>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

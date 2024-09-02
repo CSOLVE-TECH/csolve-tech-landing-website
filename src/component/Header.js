@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import './header.css';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Facebook from './social-medias/Facebook';
-import Instagram from './social-medias/Instagram';
-import LinkedIn from './social-medias/LinkedIn';
-import Telegram from './social-medias/Telegram';
-import Twitter from './social-medias/Twitter';
-import Youtube from './social-medias/Youtube';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faLinkedinIn, faTelegramPlane, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 function BasicExample() {
+  // State for managing dropdown hover
+  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const [showResourceDropdown, setShowResourceDropdown] = useState(false);
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary sticky-navbar">
       <Container>
-        <Navbar.Brand href="/" className="csolve">Csolve_Tech+</Navbar.Brand>
+        <Navbar.Brand href="#home" className="csolve">
+          <div className="brand-image-container">
+            <img src="/assets/images/logo.jpg" alt="Brand" className="brand-image" />
+          </div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -26,17 +30,37 @@ function BasicExample() {
               <NavDropdown.Item href="#action/3.2">Software Training Center</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Developer Outsourcing</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Resource" id="basic-nav-dropdown" className="Nav-itemes">
+            <NavDropdown
+              title="Resource"
+              id="basic-nav-dropdown"
+              className="Nav-itemes"
+              show={showResourceDropdown}
+              onMouseEnter={() => setShowResourceDropdown(true)}
+              onMouseLeave={() => setShowResourceDropdown(false)}
+            >
               <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Guides</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/contact" className="Nav-itemes">Contact Us</Nav.Link>
-            <Nav.Link href="#home" className="separate-socials-from-tabs"><Facebook /></Nav.Link>
-            <Nav.Link href="#home"><Instagram /></Nav.Link>
-            <Nav.Link href="#home"><LinkedIn /></Nav.Link>
-            <Nav.Link href="#home"><Telegram /></Nav.Link>
-            <Nav.Link href="#home"><Twitter /></Nav.Link>
-            <Nav.Link href="#home"><Youtube /></Nav.Link>
+            {/* Social Media Icons with Blur Effect */}
+            <Nav.Link href="#home" className="separate-socials-from-tabs">
+              <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
+            </Nav.Link>
+            <Nav.Link href="#home">
+              <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+            </Nav.Link>
+            <Nav.Link href="#home">
+              <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
+            </Nav.Link>
+            <Nav.Link href="#home">
+              <FontAwesomeIcon icon={faTelegramPlane} className="social-icon" />
+            </Nav.Link>
+            <Nav.Link href="#home">
+              <FontAwesomeIcon icon={faTwitter} className="social-icon" />
+            </Nav.Link>
+            <Nav.Link href="#home">
+              <FontAwesomeIcon icon={faYoutube} className="social-icon" />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
