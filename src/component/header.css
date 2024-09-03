@@ -1,16 +1,22 @@
-
-.separate-socials-from-tabs {
-  margin-left: 50px !important; 
+.social-icon {
+ opacity: 0.5;
+  margin-right: 10px; 
 }
 
-.Nav-itemes, .csolve {
+.social-icon:hover {
+  opacity: 1; 
+  color: blue; 
+}
+.Nav-itemes {
   font-weight: bold !important;
+  color: black !important; 
+  margin-right: 20px; 
 }
 
 .Nav-itemes:hover,
 .Nav-itemes:focus,
 .Nav-itemes:active {
-  color: blue !important;
+  color: blue !important; 
   border-bottom: 4px solid blue !important; 
 }
 
@@ -19,4 +25,32 @@
   top: 0;
   z-index: 1020; 
   background-color: white; 
+}
+
+.brand-image {
+  width: 60px; 
+  height: 60px; 
+}
+
+.separate-socials-from-tabs {
+  margin-left: 50px !important; 
+}
+
+.navbar .dropdown-toggle,
+.navbar .dropdown-menu .dropdown-item {
+  font-weight: bold !important;
+  color: black !important;
+}
+
+.navbar .dropdown-toggle:hover,
+.navbar .dropdown-toggle:focus,
+.navbar .dropdown-toggle:active,
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus,
+.navbar .dropdown-menu .dropdown-item:active {
+  color: blue !important;
+}
+
+.brand-image-container {
+  margin-right: 58px;
 }
