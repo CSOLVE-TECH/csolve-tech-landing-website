@@ -1,0 +1,72 @@
+.hero-section {
+    background-image: url('/public/assets/images/software-dev-hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-content {
+    color: #fff;
+    margin-left: 10rem;
+    text-align: left;
+    background: rgba(26, 26, 26, 0.559);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.hero-content p {
+    color: #0076E3;
+}
+
+.services {
+    color: #081234;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services .heading {
+    color: #0076E3;
+    font-size: 20px;
+    margin: 0;
+}
+
+ .heading-title {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.services-list {
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.services-list div {
+    width: 22rem;
+}
+
+.services div h1 {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.services div p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    color: #1a1a1a;
+}
+.chose-us, .collaborate{
+    padding: 1rem;
+}
