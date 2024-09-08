@@ -2,6 +2,8 @@ import React from 'react';
 import './footer.css'; 
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear(); // Fetches the current year
+
   return (
     <div>
         <div className="footer-container">
@@ -49,15 +51,14 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
         <div className='copyright'>
             <div className="lower-part">
-                <p>© Copyright 2024. We-Bridge Worlds, LLC. All Rights Reserved.</p>
+                <p>© Copyright {currentYear}. Csolve Tech+, LLC. All Rights Reserved.</p>
             </div>
             <div className='lower-part1'>
-                <p>San Francisco Web Design by Thomas Digital.</p>
+                <p>Addis Ababa, Developed by Csolve Tech+</p>
             </div>
         </div>
     </div>
