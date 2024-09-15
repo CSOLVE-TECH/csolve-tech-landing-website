@@ -27,19 +27,7 @@ function BasicExample() {
             <Nav.Link href="/about" className="Nav-itemes">About Us</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown" className="Nav-itemes">
               <NavDropdown.Item href="/service/software-development">Software Development</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Software Training Center</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Developer Outsourcing</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown
-              title="Resource"
-              id="basic-nav-dropdown"
-              className="Nav-itemes"
-              show={showResourceDropdown}
-              onMouseEnter={() => setShowResourceDropdown(true)}
-              onMouseLeave={() => setShowResourceDropdown(false)}
-            >
-              <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Guides</NavDropdown.Item>
+              <NavDropdown.Item href="/service/software-training">Software Training Center</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/contact" className="Nav-itemes">Contact Us</Nav.Link>
             {/* Social Media Icons with Blur Effect */}
