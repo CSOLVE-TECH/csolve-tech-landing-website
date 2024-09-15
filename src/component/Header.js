@@ -25,14 +25,7 @@ function BasicExample() {
           <Nav className="me-auto">
             <Nav.Link href="/" className="Nav-itemes">Home</Nav.Link>
             <Nav.Link href="/about" className="Nav-itemes">About Us</Nav.Link>
-            <NavDropdown
-              title="Services"
-              id="basic-nav-dropdown"
-              className="Nav-itemes"
-              show={showServicesDropdown}
-              onMouseEnter={() => setShowServicesDropdown(true)}
-              onMouseLeave={() => setShowServicesDropdown(false)}
-            >
+            <NavDropdown title="Services" id="basic-nav-dropdown" className="Nav-itemes">
               <NavDropdown.Item href="/service/software-development">Software Development</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Software Training Center</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Developer Outsourcing</NavDropdown.Item>
