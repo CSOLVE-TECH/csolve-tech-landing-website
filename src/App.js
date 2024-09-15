@@ -7,6 +7,7 @@ import ContactUs from './pages/Contactus/ContactUs';
 import SoftwareDev from './pages/Software-dev/SoftwareDev';
 import './App.css';
 import Footer from './component/Footer';
+import Home from './pages/Home/Home'
 import SoftwareTraining from './pages/Training/SoftwareTraining';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <main>
           <Routes>
+          <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/software-training" element={<SoftwareTraining />} />
