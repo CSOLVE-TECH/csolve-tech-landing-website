@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>emerging-trends-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-251.987734%" y1="50%" x2="182.46594%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#EC008C" offset="0%"></stop>
+            <stop stop-color="#EC008C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-251.987734%" y1="50%" x2="182.46594%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#EC008C" offset="0%"></stop>
+            <stop stop-color="#EC008C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-251.987734%" y1="50%" x2="182.46594%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#EC008C" offset="0%"></stop>
+            <stop stop-color="#EC008C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-251.987734%" y1="50%" x2="182.46594%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#EC008C" offset="0%"></stop>
+            <stop stop-color="#EC008C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-55.3873912%" y1="50%" x2="158.069503%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#EC008C" offset="0%"></stop>
+            <stop stop-color="#EC008C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-251.987734%" y1="50%" x2="182.46594%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#EC008C" offset="0%"></stop>
+            <stop stop-color="#EC008C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-55.3873912%" y1="50%" x2="158.069503%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#EC008C" offset="0%"></stop>
+            <stop stop-color="#EC008C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="v2-gtm-designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="v5-gtm-paid-media-lp" transform="translate(-970.000000, -714.000000)" stroke-width="1.899">
+            <g id="hero-features" transform="translate(171.000000, 714.000000)">
+                <g id="emerging-trends-icon" transform="translate(799.000000, 0.000000)">
+                    <polygon id="Stroke-1" stroke="url(#linearGradient-1)" points="27.53 44.6174 38.922 44.6174 38.922 38.9224 27.53 38.9224"></polygon>
+                    <path d="M37.0238,38.9225 L37.0238,36.0145 C37.0238,36.0145 43.0738,30.0245 44.6188,28.4795 L44.6188,13.1715 C44.6188,13.1715 39.8718,11.4515 39.8718,24.6825 L34.2348,30.3185 L35.5408,24.6225 C36.1928,21.8945 33.6968,20.7295 32.3368,22.8435 C31.0828,24.7915 29.4288,30.3645 29.4288,30.3645 L29.4288,38.9225" id="Stroke-3" stroke="url(#linearGradient-2)" stroke-linecap="round"></path>
+                    <polygon id="Stroke-4" stroke="url(#linearGradient-3)" points="6.645 44.6174 18.038 44.6174 18.038 38.9224 6.645 38.9224"></polygon>
+                    <path d="M8.5444,38.9225 L8.5444,36.0145 C8.5444,36.0145 2.8484,30.0245 0.9494,28.4795 L0.9494,13.1715 C0.9494,13.1715 5.6954,11.4515 5.6954,24.6825 L11.3324,30.3185 L10.0264,24.6225 C9.3744,21.8945 11.8704,20.7295 13.2314,22.8435 C14.4844,24.7915 16.1384,30.3645 16.1384,30.3645 L16.1384,38.9225" id="Stroke-5" stroke="url(#linearGradient-4)" stroke-linecap="round"></path>
+                    <polygon id="Stroke-6" stroke="url(#linearGradient-5)" points="21.8344 12.3415 12.3414 6.6455 12.3414 18.0365 21.8344 23.7335 33.2264 18.0365 33.2264 6.6455"></polygon>
+                    <polygon id="Stroke-7" stroke="url(#linearGradient-6)" points="22.7836 0.9489 12.3416 6.6449 21.8346 12.3419 33.2256 6.6449"></polygon>
+                    <path d="M21.8344,12.3415 L21.8344,23.7335" id="Stroke-8" stroke="url(#linearGradient-7)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

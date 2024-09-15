@@ -4,42 +4,42 @@ import './SoftwareTraining.css'; // Assuming you want to style this page
 const courses = [
   { 
     title: "HTML/CSS", 
-    image: "https://www.seoclerk.com/pics/523331-1e2qQI1490977998.jpg", 
+    image: `${process.env.PUBLIC_URL}/assets/images/html.jpg`, 
     description: "Master the building blocks of web development with HTML and CSS. Learn how to create visually stunning and responsive websites from scratch."
   },
   { 
     title: "JavaScript", 
-    image: "https://img.freepik.com/premium-photo/javascript-programming-text_272306-138.jpg", 
+    image: `${process.env.PUBLIC_URL}/assets/images/js.jpg`, 
     description: "Dive into the world of JavaScript, the language of the web. Gain proficiency in building dynamic, interactive web applications and understand the core concepts of modern JavaScript."
   },
   { 
     title: "Python", 
-    image: "https://clipart-library.com/new_gallery/289-2896071_python-logo-png-165709.png", 
+    image: `${process.env.PUBLIC_URL}/assets/images/python.png`, 
     description: "Learn Python, the versatile programming language that powers everything from web applications to data science and machine learning. Get hands-on experience with real-world projects."
   },
   { 
     title: "C++", 
-    image: "https://tse2.mm.bing.net/th?id=OIP.Np-tPcxCeW3GN0s-Ud28PgHaE8&pid=Api", 
+    image: `${process.env.PUBLIC_URL}/assets/images/c++.jpg`, 
     description: "Unlock the power of C++, a high-performance programming language widely used in software development, game development, and systems programming. Build a strong foundation in object-oriented programming."
   },
   { 
     title: "Java", 
-    image: "http://ceit.upng.ac.pg/images/course_jp.jpg", 
+    image: `${process.env.PUBLIC_URL}/assets/images/java.jpg`, 
     description: "Explore the world of Java, a robust and versatile programming language. Learn to build scalable, cross-platform applications with a focus on object-oriented programming and real-world problem-solving."
   },
   { 
     title: "PHP", 
-    image: "https://friconix.com/jpg/fi-cnsuxx-php-logo.jpg", 
+    image: `${process.env.PUBLIC_URL}/assets/images/php.jpg`, 
     description: "Become proficient in PHP, the scripting language that powers the web. Learn to develop dynamic websites and web applications, and integrate with databases seamlessly."
   },
   { 
     title: "SQL", 
-    image: "https://comdy.vn/wp-content/uploads/2023/11/Kieu-du-lieu-nvarchar-la-gi.png", 
+    image: `${process.env.PUBLIC_URL}/assets/images/sql.png`, 
     description: "Master SQL, the standard language for managing and manipulating databases. Learn how to create, read, update, and delete data, and gain insights into optimizing database performance."
   },
   { 
     title: "Flutter", 
-    image: "https://www.daily.co/blog/content/images/2023/07/Flutter-feature.png", 
+    image: `${process.env.PUBLIC_URL}/assets/images/flutter.png`, 
     description: "Learn to build cross-platform mobile applications using Flutter. Gain expertise in Dart programming, Flutter widgets, and app design principles to create beautiful and functional mobile apps for both Android and iOS."
   }
 ];
@@ -47,17 +47,17 @@ const courses = [
 const programs = [
   { 
     title: "Website Development", 
-    image: "https://api.reliasoftware.com/uploads/web_development_is_important_176fa0618e.jpg", 
+    image: `${process.env.PUBLIC_URL}/assets/images/we.jpg`, 
     description: "Master the art of creating responsive and visually stunning websites. Learn HTML, CSS, JavaScript, and popular frameworks to build dynamic websites from scratch."
   },
   { 
     title: "Data Analysis", 
-    image: "https://codoid.com/wp-content/uploads/2018/12/data_science.jpg", 
+    image: `${process.env.PUBLIC_URL}/assets/images/da.jpg`, 
     description: "Dive into the world of data analysis. Learn how to collect, process, and analyze data using Python, Excel, SQL, and visualization tools to derive meaningful insights."
   },
   { 
     title: "Mobile App Development", 
-    image: "https://geekwatchnow.com/wp-content/uploads/2022/01/Mobile-App-Development-Services-in-Chicago-800x445.jpg", 
+    image: `${process.env.PUBLIC_URL}/assets/images/mob.jpg`, 
     description: "Learn to build cross-platform mobile applications using Flutter. Gain expertise in Dart programming, Flutter widgets, and app design principles to create beautiful and functional mobile apps for both Android and iOS."
   }
 ];
@@ -74,21 +74,20 @@ const SoftwareTraining = () => {
           <button className="cta-button">Start Here</button>
         </div>
         <div className="image-content">
-          <img src={`https://i.morioh.com/210512/340220e6.webp`} alt="Training" />
+          <img src={`${process.env.PUBLIC_URL}/assets/images/traning1.webp`} alt="Training" />
         </div>
       </div>
-
       <div className="benefits-container">
         <div className="benefit-item">
-          <img src={`https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/browse/pink-icons/timeline-icon.svg`} alt="Timeline" className="benefit-icon" />
+          <img src={`${process.env.PUBLIC_URL}/assets/images/timeline-icon.svg`} alt="Timeline" className="benefit-icon" />
           <p>Learn on your own timeline</p>
         </div>
         <div className="benefit-item">
-          <img src={`https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/browse/pink-icons/master-craft-icon.svg`} alt="Master Your Craft" className="benefit-icon" />
+          <img src={`${process.env.PUBLIC_URL}/assets/images/master-craft-icon.svg`} alt="Master Your Craft" className="benefit-icon" />
           <p>Master your craft</p>
         </div>
         <div className="benefit-item">
-          <img src={`https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/browse/pink-icons/emerging-trends-icon.svg `} alt="Emerging Trends" className="benefit-icon" />
+          <img src={`${process.env.PUBLIC_URL}/assets/images/emerging-trends-icon.svg`} alt="Emerging Trends" className="benefit-icon" />
           <p>Keep up with emerging trends</p>
         </div>
       </div>
