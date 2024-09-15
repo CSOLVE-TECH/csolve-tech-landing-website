@@ -8,6 +8,8 @@ import SoftwareDev from './pages/Software-dev/SoftwareDev';
 import './App.css';
 import Footer from './component/Footer';
 import Home from './pages/Home/Home'
+import SoftwareTraining from './pages/Training/SoftwareTraining';
+
 function App() {
   return (
     <Router>
@@ -18,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/software-training" element={<SoftwareTraining />} />
             <Route path="/service/software-development" element={<SoftwareDev />} />
           </Routes>
         </main>

@@ -125,16 +125,16 @@ const About = () => {
         <div className="techinfo">
           <div class="buttons">
           <button className="blob-btn" onClick={navigateToContactPage}>
-      Send Us Message
-      <span className="blob-btn__inner">
-        <span className="blob-btn__blobs">
-          <span className="blob-btn__blob"></span>
-          <span className="blob-btn__blob"></span>
-          <span className="blob-btn__blob"></span>
-          <span className="blob-btn__blob"></span>
-        </span>
-      </span>
-    </button>
+            Send Us Message
+            <span className="blob-btn__inner">
+              <span className="blob-btn__blobs">
+                <span className="blob-btn__blob"></span>
+                <span className="blob-btn__blob"></span>
+                <span className="blob-btn__blob"></span>
+                <span className="blob-btn__blob"></span>
+              </span>
+            </span>
+          </button>
             <br />
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
