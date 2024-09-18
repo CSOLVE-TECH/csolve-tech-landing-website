@@ -27,17 +27,16 @@
 }
 
 .cta-button {
-  background-color: #ff006a; /* Bright red similar to the button in your image */
-  color: white;
-  padding: 15px 30px;
-  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
   border: none;
-  border-radius: 25px;
+  background: linear-gradient(to right, #3b82f6, #e91e63); 
+  color: white;
   cursor: pointer;
-}
+  transition: background-color 0.3s ease;
 
-.cta-button:hover {
-  background-color: #e600de; /* Slightly darker shade on hover */
 }
 
 .image-content {
@@ -195,13 +194,15 @@
 }
 
 .enroll-button {
-  background-color:  #e6005c;
-  color: white;
   padding: 10px 20px;
-  font-size: 1em;
+  margin: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
   border: none;
-  border-radius: 25px;
+  background: linear-gradient(to right, #3b82f6, #e91e63); 
+  color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .enroll-button:hover {

@@ -15,9 +15,10 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary sticky-navbar">
       <Container>
-        <Navbar.Brand href="#home" className="csolve">
+        {/* Wrap the image in an anchor tag or Nav.Link to make it clickable */}
+        <Navbar.Brand href="/" className="csolve">
           <div className="brand-image-container">
-            <img src="/assets/images/logo.jpg" alt="Brand" className="brand-image" />
+            <img src="/assets/images/logo.png" alt="Brand" className="brand-image" />
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

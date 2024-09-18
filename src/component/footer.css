@@ -32,15 +32,15 @@
   }
   
   .connect-button {
-    background-color: transparent;
-    border: 2px solid #E63946; /* Border color */
-    color: #eff8f3; /* Text color */
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
     border-radius: 5px;
-    padding: 10px 20px; /* Padding inside the button */
-    font-size: 1em; /* Adjust font-size as needed */
+    border: none;
+    background: linear-gradient(to right, #3b82f6, #e91e63); 
+    color: white;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    white-space: nowrap; /* Prevents the text from wrapping */
+    transition: background-color 0.3s ease;
   }
   
   .connect-button:hover {
