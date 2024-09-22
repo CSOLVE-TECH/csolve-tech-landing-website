@@ -104,9 +104,11 @@ const Home = () => {
           Discover featured resources on the latest topics—created and curated
           specifically for <strong>Our Services</strong>.
         </p>
+        {/* 
         <button className="resources-button" onClick={navigateToResourcesPage}>
           Go To Resources
-        </button>
+        </button> 
+        */}
       </div>
     </div>
   );
