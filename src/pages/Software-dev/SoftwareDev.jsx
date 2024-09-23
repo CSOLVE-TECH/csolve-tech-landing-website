@@ -20,6 +20,15 @@ function SoftwareDev() {
           <div className="services-list">
             <div>
               <h1>Custom Software Development</h1>
+              <div>
+                <img
+                style={{"objectFit":"cover", "borderRadius":'10px',"padding":"5px"}}
+                  src={`${process.env.PUBLIC_URL}/assets/software.jpg`}
+                  alt=""
+                  width={350}
+                  height={100}
+                />
+              </div>
               <p>
                 We create bespoke web and mobile applications, providing
                 end-to-end development that integrates seamlessly with your
@@ -29,6 +38,15 @@ function SoftwareDev() {
             </div>
             <div>
               <h1>Product Development</h1>
+              <div>
+                <img
+                style={{"objectFit":"cover", "borderRadius":'10px',"padding":"5px"}}
+                  src={`${process.env.PUBLIC_URL}/assets/product-dev.jpg`}
+                  alt=""
+                  width={350}
+                  height={100}
+                />
+              </div>
               <p>
                 From concept to market, we help you rapidly develop and launch
                 your products. Our services include MVP development for quick
@@ -39,6 +57,15 @@ function SoftwareDev() {
             </div>
             <div>
               <h1>Consulting & Strategy</h1>
+              <div>
+                <img
+                style={{"objectFit":"cover", "borderRadius":'10px',"padding":"5px"}}
+                  src={`${process.env.PUBLIC_URL}/assets/consultency.jpg`}
+                  alt=""
+                  width={350}
+                  height={100}
+                />
+              </div>
               <p>
                 Our expert consulting services guide you in choosing the right
                 technologies, optimizing your software for scalability, and

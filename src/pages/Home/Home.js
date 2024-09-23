@@ -34,7 +34,7 @@ const Home = () => {
       </div>
 
       <div className="platform">
-        <h5>WE-BRIDGE SOFTWARE SOLUTIONS</h5>
+        <h5>Csolve-Tech+ SOFTWARE SOLUTIONS</h5>
         <h1>
           Simple. Secure. Connected. Efficient. Scalable. Reliable. Intuitive.
           Adaptable
