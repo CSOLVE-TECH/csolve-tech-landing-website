@@ -10,6 +10,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+
 function ContactUs() {
   return (
     <div className="contact-us">
@@ -48,20 +49,29 @@ function ContactUs() {
             </div>
           </div>
           <div className="section icons">
-            <FaFacebook className="social-icons" />
-            <FaSquareXTwitter className="social-icons" />
-            <FaTelegram className="social-icons" />
-            <FaLinkedin className="social-icons" />
+            {/* Clickable social icons */}
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="social-icons" />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <FaSquareXTwitter className="social-icons" />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <FaTelegram className="social-icons" />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="social-icons" />
+            </a>
           </div>
           <div className="big-circle"></div>
           <div className="small-circle"></div>
         </div>
         {/* //contact form */}
-        <div class="message-form">
+        <div className="message-form">
           <form>
             <div className="form-container">
-              <div class="form-row">
-                <div class="form-group">
+              <div className="form-row">
+                <div className="form-group">
                   <input
                     type="text"
                     id="first-name"
@@ -70,7 +80,7 @@ function ContactUs() {
                     required
                   />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <input
                     type="text"
                     id="last-name"
@@ -80,8 +90,8 @@ function ContactUs() {
                   />
                 </div>
               </div>
-              <div class="form-row">
-                <div class="form-group">
+              <div className="form-row">
+                <div className="form-group">
                   <input
                     type="email"
                     id="email"
@@ -90,7 +100,7 @@ function ContactUs() {
                     required
                   />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <input
                     type="tel"
                     id="phone"
@@ -100,8 +110,8 @@ function ContactUs() {
                   />
                 </div>
               </div>
-              <div class="form-row full-width">
-                <div class="form-group">
+              <div className="form-row full-width">
+                <div className="form-group">
                   <textarea
                     id="message"
                     name="message"
@@ -110,8 +120,8 @@ function ContactUs() {
                   ></textarea>
                 </div>
               </div>
-              <div class="form-row full-width btn">
-                <div class="form-group">
+              <div className="form-row full-width btn">
+                <div className="form-group">
                   <button type="submit">Submit</button>
                 </div>
               </div>
@@ -121,7 +131,7 @@ function ContactUs() {
       </div>
       {/* faq section */}
       <div className="faq">
-        <FAQ/>
+        <FAQ />
       </div>
     </div>
   );

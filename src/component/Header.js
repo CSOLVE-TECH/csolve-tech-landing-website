@@ -15,9 +15,10 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary sticky-navbar">
       <Container>
-        <Navbar.Brand href="#home" className="csolve">
+        {/* Wrap the image in an anchor tag or Nav.Link to make it clickable */}
+        <Navbar.Brand href="/" className="csolve">
           <div className="brand-image-container">
-            <img src="/assets/images/logo.jpg" alt="Brand" className="brand-image" />
+            <img src="/assets/images/logo.png" alt="Brand" className="brand-image" />
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,19 +28,7 @@ function BasicExample() {
             <Nav.Link href="/about" className="Nav-itemes">About Us</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown" className="Nav-itemes">
               <NavDropdown.Item href="/service/software-development">Software Development</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Software Training Center</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Developer Outsourcing</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown
-              title="Resource"
-              id="basic-nav-dropdown"
-              className="Nav-itemes"
-              show={showResourceDropdown}
-              onMouseEnter={() => setShowResourceDropdown(true)}
-              onMouseLeave={() => setShowResourceDropdown(false)}
-            >
-              <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Guides</NavDropdown.Item>
+              <NavDropdown.Item href="/service/software-training">Software Training Center</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/contact" className="Nav-itemes">Contact Us</Nav.Link>
             {/* Social Media Icons with Blur Effect */}

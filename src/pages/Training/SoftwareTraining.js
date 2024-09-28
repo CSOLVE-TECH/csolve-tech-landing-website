@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SoftwareTraining.css'; // Assuming you want to style this page
 import ModalForm from '../../component/ModalForm'
 
+import { useNavigate } from "react-router-dom";
 
 const courses = [
   { 
@@ -76,6 +77,10 @@ const programs = [
 ];
 
 const SoftwareTraining = () => {
+  const navigate = useNavigate();
+  const navigateToContactUsPage = () => {
+    navigate("/contact");
+  };
   const [showModal, setShowModal] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
 
@@ -119,7 +124,7 @@ const SoftwareTraining = () => {
           <p>
             Our company, Csolve Tech+, is built with dedicated software expert peers and focuses on software development while providing up-to-date technical skills in today's market. We pride ourselves on delivering expert-level training, ensuring our clients and students stay ahead in the ever-evolving tech industry.
           </p>
-          <button className="cta-button">Start Here</button>
+          <button className="cta-button" onClick={navigateToContactUsPage}>Start Connect With Us</button>
         </div>
         <div className="image-content">
           <img src={`${process.env.PUBLIC_URL}/assets/images/traning1.webp`} alt="Training" />

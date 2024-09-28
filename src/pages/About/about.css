@@ -43,7 +43,8 @@
 }
 
 .main-about{
-  background-color: rgb(237, 237, 249);
+  width: 80vw;
+  margin: auto;
 }
 
 .technology{
@@ -53,10 +54,6 @@
     padding-bottom: 80px;
 }
 
-.our-process{
-   padding-left: 2%;
-
-}
 
 .our-process p{
   padding-top: 30px;

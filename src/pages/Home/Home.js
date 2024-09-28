@@ -34,7 +34,7 @@ const Home = () => {
       </div>
 
       <div className="platform">
-        <h5>WE-BRIDGE SOFTWARE SOLUTIONS</h5>
+        <h5>Csolve-Tech+ SOFTWARE SOLUTIONS</h5>
         <h1>
           Simple. Secure. Connected. Efficient. Scalable. Reliable. Intuitive.
           Adaptable
@@ -104,9 +104,11 @@ const Home = () => {
           Discover featured resources on the latest topics—created and curated
           specifically for <strong>Our Services</strong>.
         </p>
+        {/* 
         <button className="resources-button" onClick={navigateToResourcesPage}>
           Go To Resources
-        </button>
+        </button> 
+        */}
       </div>
     </div>
   );
