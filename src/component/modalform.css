@@ -1,0 +1,8 @@
+  .modal {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;  /* Smooth transition for 0.5 seconds */
+  }
+  
+  .modal.show {
+    opacity: 1;
+  }
