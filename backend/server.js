@@ -4,11 +4,11 @@ const { Pool } = require('pg');
 const cors = require('cors'); // CORS for frontend requests
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.json()); 
 
 // PostgreSQL setup
 const pool = new Pool({
