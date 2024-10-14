@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from 'axios'
+import axios from "axios";
 import "./ContactUs.css";
 import FAQ from "./Faq";
 import {
@@ -32,32 +32,35 @@ function ContactUs() {
   const [status, setStatus] = useState({
     loading: false,
     success: null,
-    error: null
-});
+    error: null,
+  });
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setStatus({ loading: true, success: null, error: null });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, success: null, error: null });
 
-  try {
-      const response = await axios.post('http://localhost:3003/send', formData);
-      console.log(response)
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/mailer/send",
+        formData
+      );
+      console.log(response);
       setStatus({ loading: false, success: response.data, error: null });
       setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          message: ''
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
       });
-  } catch (error) {
+    } catch (error) {
       setStatus({
-          loading: false,
-          success: null,
-          error: error.response ? error.response.data : 'An error occurred.'
+        loading: false,
+        success: null,
+        error: error.response ? error.response.data : "An error occurred.",
       });
-  }
-};
+    }
+  };
 
   return (
     <div className="contact-us">
@@ -115,8 +118,10 @@ const handleSubmit = async (e) => {
         </div>
         {/* //contact form */}
         <div className="message-form">
-        {status.success && <p style={{ color: 'green' }}>Sent successfully</p>}
-        {status.error && <p style={{ color: 'red' }}>error</p>}
+          {status.success && (
+            <p style={{ color: "green" }}>Sent successfully</p>
+          )}
+          {status.error && <p style={{ color: "red" }}>error</p>}
           <form onSubmit={handleSubmit}>
             <div className="form-container">
               <div className="form-row">
@@ -176,7 +181,9 @@ const handleSubmit = async (e) => {
               </div>
               <div className="form-row full-width">
                 <div className="form-group">
-                  <button type="submit">Submit</button>
+                  <button type="submit" disabled={status.loading}>
+                    {!status.loading ? "Submit" : "submitting"}
+                  </button>
                 </div>
               </div>
             </div>
