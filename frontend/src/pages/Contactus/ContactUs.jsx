@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./ContactUs.css";
-import FAQ from './Faq';
+import FAQ from "./Faq";
 import {
   FaPhone,
   FaEnvelope,
@@ -12,6 +13,55 @@ import {
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 function ContactUs() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const [status, setStatus] = useState({
+    loading: false,
+    success: null,
+    error: null,
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, success: null, error: null });
+
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/mailer/send",
+        formData
+      );
+      console.log(response);
+      setStatus({ loading: false, success: response.data, error: null });
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      setStatus({
+        loading: false,
+        success: null,
+        error: error.response ? error.response.data : "An error occurred.",
+      });
+    }
+  };
+
   return (
     <div className="contact-us">
       {/* //contactus page bg image */}
@@ -68,24 +118,30 @@ function ContactUs() {
         </div>
         {/* //contact form */}
         <div className="message-form">
-          <form>
+          {status.success && (
+            <p style={{ color: "green" }}>Sent successfully</p>
+          )}
+          {status.error && <p style={{ color: "red" }}>error</p>}
+          <form onSubmit={handleSubmit}>
             <div className="form-container">
               <div className="form-row">
                 <div className="form-group">
                   <input
                     type="text"
-                    id="first-name"
-                    name="first-name"
+                    id="firstName"
+                    name="firstName"
                     placeholder="first name"
+                    onChange={handleChange}
                     required
                   />
                 </div>
                 <div className="form-group">
                   <input
                     type="text"
-                    id="last-name"
-                    name="last-name"
+                    id="lastName"
+                    name="lastName"
                     placeholder="last name"
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -97,6 +153,7 @@ function ContactUs() {
                     id="email"
                     name="email"
                     placeholder="email"
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -106,6 +163,7 @@ function ContactUs() {
                     id="phone"
                     name="phone"
                     placeholder="phone"
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -116,13 +174,16 @@ function ContactUs() {
                     id="message"
                     name="message"
                     placeholder="your message"
+                    onChange={handleChange}
                     required
                   ></textarea>
                 </div>
               </div>
-              <div className="form-row full-width btn">
+              <div className="form-row full-width">
                 <div className="form-group">
-                  <button type="submit">Submit</button>
+                  <button type="submit" disabled={status.loading}>
+                    {!status.loading ? "Submit" : "submitting"}
+                  </button>
                 </div>
               </div>
             </div>

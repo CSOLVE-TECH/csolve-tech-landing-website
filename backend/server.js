@@ -1,14 +1,44 @@
+// server.js
+
+require('dotenv').config(); // Ensure environment variables are loaded
 const express = require('express');
 const bodyParser = require('body-parser');
 const { Pool } = require('pg');
 const cors = require('cors'); // CORS for frontend requests
+const helmet = require('helmet'); // Security middleware
+const rateLimit = require('express-rate-limit'); // Rate limiting
+const path = require('path'); // For serving static files if needed
+
+// Import the mailer routes
+const mailerRoutes = require('./mailer'); // Ensure the path is correct
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors());
+app.use(helmet());
+
+// CORS Configuration
+const corsOptions = {
+    origin: 'http://localhost:3000', // Adjust as needed
+    optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
+
+// Body Parsers
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Rate Limiting
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // limit each IP to 100 requests per windowMs
+    message: 'Too many requests from this IP, please try again later.'
+});
+app.use(limiter);
+
+// Serve static files if needed
+// app.use(express.static(path.join(__dirname, 'public')));
 
 // PostgreSQL setup
 const pool = new Pool({
@@ -48,6 +78,9 @@ const createEnrollmentsTable = async () => {
 // Call the function to create the table when the server starts
 createEnrollmentsTable();
 
+// Use Mailer Routes
+app.use('/mailer', mailerRoutes); // All mailer routes will be prefixed with /mailer
+
 // Route to handle form submissions
 app.post('/api/enroll', async (req, res) => {
     const { firstName, lastName, email, phone, gender, address, programType, courseId, courseTitle } = req.body;
@@ -85,6 +118,7 @@ app.post('/api/enroll', async (req, res) => {
       res.status(500).json({ message: 'An error occurred during enrollment.' });
     }
 });
+
 
 // Start the server
 app.listen(PORT, () => {
