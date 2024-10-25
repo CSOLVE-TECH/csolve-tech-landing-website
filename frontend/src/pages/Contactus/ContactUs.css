@@ -52,7 +52,7 @@
 
 .company-details {
     width: 32vw;
-    height: 80vh;
+    height: 550px;
     border-radius: .5rem;
     background: #172444;
     position: relative;
@@ -118,7 +118,7 @@
 
 .message-form {
     width: 50vw;
-    height: 80vh;
+    height: 550px;
     padding: 2rem;
     border-radius: .5rem;
     background: #ffffff;
