@@ -93,7 +93,7 @@ const SoftwareTraining = () => {
 
   const handleFormSubmit = async (data) => {
     try {
-      const response = await fetch("http://localhost:5000/api/enroll", {
+      const response = await fetch("http://localhost:3001/api/enroll", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
