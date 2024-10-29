@@ -3,7 +3,6 @@ import './SoftwareTraining.css'; // Assuming you want to style this page
 import ModalForm from '../../component/ModalForm'
 
 import { useNavigate } from "react-router-dom";
-
 const courses = [
   { 
     id: 1,
@@ -93,7 +92,7 @@ const SoftwareTraining = () => {
 
   const handleFormSubmit = async (data) => {
     try {
-      const response = await fetch("http://localhost:3001/api/enroll", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/enroll`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
