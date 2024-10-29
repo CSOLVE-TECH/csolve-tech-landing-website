@@ -9,7 +9,6 @@ import './App.css';
 import Footer from './component/Footer';
 import Home from './pages/Home/Home'
 import SoftwareTraining from './pages/Training/SoftwareTraining';
-
 function App() {
   return (
     <Router>

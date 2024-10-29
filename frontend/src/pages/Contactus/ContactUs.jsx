@@ -41,7 +41,7 @@ function ContactUs() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/mailer/send",
+        `${process.env.REACT_APP_API_URL}/mailer/send`,
         formData
       );
       console.log(response);

@@ -20,7 +20,7 @@ app.use(helmet());
 
 // CORS Configuration
 const corsOptions = {
-    origin: 'http://localhost:3000', // Adjust as needed
+    origin: process.env.frontendUrl, // Adjust as needed
     optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
@@ -46,7 +46,7 @@ const pool = new Pool({
   host: 'localhost',
   database: 'enrollments_db',
   password: '1234',
-  port: '8000',
+  port: process.env.PG_PORT,
 });
 
 // Function to create the enrollments table if it doesn't exist

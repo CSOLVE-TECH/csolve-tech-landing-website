@@ -106,7 +106,6 @@ const ModalForm = ({ show, handleClose, selectedCourse, handleSubmit }) => {
               <option value="">Select...</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
-              <option value="other">Other</option>
             </Form.Control>
           </Form.Group>
           <Form.Group>
